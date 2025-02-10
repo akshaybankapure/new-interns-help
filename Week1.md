@@ -1,171 +1,69 @@
 # Week 1: Python Fundamentals Training Plan
 
 ## **Goal**
-Build a strong foundation in Python by covering syntax, data types, conditionals, loops, and functions while practicing real-world coding exercises.
+Build a strong foundation in Python by covering syntax, data types, conditionals, loops, functions, and comprehensions while practicing real-world coding exercises with an advanced touch.
 
 ---
 
 ## **📅 Day 1: Introduction to Python & Basics**
 
 ### **Concepts to Learn**
-- Installing Python & setting up VS Code / PyCharm
+- Installing Python & setting up VS Code / PyCharm ([W3Schools: Python Installation](https://www.w3schools.com/python/python_getstarted.asp))
 - Running Python scripts
-- Basic syntax & print statements (link: https://www.w3schools.com/python/python_syntax.asp)
-- Variables and data types (integers, floats, strings, booleans)
-- String manipulation and formatting
-- Type conversion (`int()`, `float()`, `str()`)
-- User input (`input()` function)
-
-### **📝 4 Mini Tasks**
-1. **Print Formatter:** Take a user’s name and age as input and print:
-   ```
-   "Hello, [name]! You are [age] years old."
-   ```
-2. **String Reversal:** Write a function that takes a string and returns the reversed version.
-3. **Basic Calculator:** Write a program that takes two numbers and an operator (`+`, `-`, `*`, `/`) and performs the operation.
-4. **Type Conversion Practice:** Convert a float input to an integer and print both values.
-
-### **🔥 2 Major Exercises**
-1. **Simple Billing System:** Take the price of three items, calculate the total cost, add 18% GST, and print the final amount.
-2. **Temperature Converter:** Convert temperature between Fahrenheit and Celsius.
-
-### **💻 Git Tasks**
-- Create a new branch with today’s date (`YYYY-MM-DD`).
-- Commit and push all the tasks to the repository.
+- Basic syntax & print statements ([W3Schools: Python Syntax](https://www.w3schools.com/python/python_syntax.asp))
+- Variables and data types ([W3Schools: Python Variables](https://www.w3schools.com/python/python_variables.asp))
+- String manipulation and formatting (`f-strings`, `.format()`, `% formatting`) ([W3Schools: Python Strings](https://www.w3schools.com/python/python_strings.asp))
+- Type conversion (`int()`, `float()`, `str()`) ([W3Schools: Python Data Types](https://www.w3schools.com/python/python_datatypes.asp))
+- User input (`input()` function) ([W3Schools: Python User Input](https://www.w3schools.com/python/python_user_input.asp))
+- Basic operators and expressions ([W3Schools: Python Operators](https://www.w3schools.com/python/python_operators.asp))
+- Single-line conditionals and expressions
 
 ---
 
 ## **📅 Day 2: Operators, Conditionals & Logical Statements**
 
 ### **Concepts to Learn**
-- Arithmetic operators (`+`, `-`, `*`, `/`, `//`, `%`, `**`)
-- Comparison operators (`==`, `!=`, `<`, `>`, `<=`, `>=`)
-- Logical operators (`and`, `or`, `not`)
-- Conditional statements (`if-elif-else`)
-- Boolean values & truthy/falsy values
-
-### **📝 4 Mini Tasks**
-1. **Odd or Even Checker:** Check if a number is even or odd.
-2. **Number Comparison:** Take two numbers and print the greater one.
-3. **Voter Eligibility:** Check if a user is eligible to vote (`age >= 18`).
-4. **Login System (Hardcoded Credentials):** Prompt for username and password and verify correctness.
-
-### **🔥 2 Major Exercises**
-1. **Discount Calculator:** Apply a 10% discount for purchases over 500, else apply 5%.
-2. **ATM Withdrawal System:** Ask for balance and withdrawal amount, check if balance is sufficient.
-
-### **💻 Git Tasks**
-- Create a new branch, commit all code, and push changes.
-- Merge today’s branch into `main` after review.
+- Arithmetic operators (`+`, `-`, `*`, `/`, `//`, `%`, `**`) ([W3Schools: Python Operators](https://www.w3schools.com/python/python_operators.asp))
+- Comparison operators (`==`, `!=`, `<`, `>`, `<=`, `>=`) ([W3Schools: Python Comparison Operators](https://www.w3schools.com/python/python_operators.asp))
+- Logical operators (`and`, `or`, `not`) ([W3Schools: Python Logical Operators](https://www.w3schools.com/python/python_operators.asp))
+- Conditional statements (`if-elif-else`) ([W3Schools: Python If...Else](https://www.w3schools.com/python/python_conditions.asp))
+- Boolean values & truthy/falsy values ([W3Schools: Python Booleans](https://www.w3schools.com/python/python_booleans.asp))
+- Inline if-else conditions ([W3Schools: Python If Statement](https://www.w3schools.com/python/python_conditions.asp))
+- Using lambda functions for conditional expressions ([W3Schools: Python Lambda](https://www.w3schools.com/python/python_lambda.asp))
 
 ---
 
-## **📅 Day 3: Loops & Iterations**
+## **📅 Day 3: Loops, Iteration & Comprehensions**
 
 ### **Concepts to Learn**
-- `for` loops (range-based, iterating over lists/strings)
-- `while` loops & loop conditions
-- `break` and `continue` statements
-- Nested loops
-
-### **📝 4 Mini Tasks**
-1. **Counting Loop:** Print numbers from 1 to 10 using a `for` loop.
-2. **Multiplication Table:** Print the multiplication table for a given number.
-3. **List Sum:** Sum a list of numbers using a loop.
-4. **Reverse a String (Using a Loop):** Reverse a string without slicing.
-
-### **🔥 2 Major Exercises**
-1. **Banking Interest Calculation:** Compute compound interest yearly.
-2. **Password Retry System:** Allow 3 login attempts before locking the user out.
-
-### **💻 Git Tasks**
-- Create a branch, push code, and merge after review.
+- `for` loops (range-based, iterating over lists/strings) ([W3Schools: Python For Loops](https://www.w3schools.com/python/python_for_loops.asp))
+- `while` loops & loop conditions ([W3Schools: Python While Loops](https://www.w3schools.com/python/python_while_loops.asp))
+- `break` and `continue` statements ([W3Schools: Python Loop Control](https://www.w3schools.com/python/python_while_loops.asp))
+- Nested loops ([W3Schools: Python Nested Loops](https://www.w3schools.com/python/python_for_loops.asp))
+- List, dictionary, and set comprehensions ([W3Schools: Python List Comprehension](https://www.w3schools.com/python/python_lists_comprehension.asp))
+- Iterating over dictionaries ([W3Schools: Python Dictionaries](https://www.w3schools.com/python/python_dictionaries.asp))
+- `zip()` and `enumerate()` functions for iteration ([W3Schools: Python Iterators](https://www.w3schools.com/python/python_iterators.asp))
 
 ---
 
-## **📅 Day 4: Lists & Tuples**
+## **📅 Day 4: Functions & Advanced Operations**
 
 ### **Concepts to Learn**
-- Lists: Creating, modifying, and slicing
-- List methods (`append()`, `remove()`, `sort()`, `reverse()`)
-- Tuples: Creating & accessing values
-- List comprehensions
-
-### **📝 4 Mini Tasks**
-1. **List Sorting:** Sort a list of numbers in ascending order.
-2. **Duplicate Remover:** Remove duplicates from a list.
-3. **Tuple Swap:** Swap two elements in a tuple.
-4. **List Reversal:** Reverse a list using slicing.
-
-### **🔥 2 Major Exercises**
-1. **Shopping Cart:** Add/remove items from a list-based cart.
-2. **Contact Book:** Store and manage contacts using a list of tuples (`(name, phone_number)`).
-
-### **💻 Git Tasks**
-- Create a branch, push, and merge after review.
+- Defining functions & return values ([W3Schools: Python Functions](https://www.w3schools.com/python/python_functions.asp))
+- Function arguments & default values ([W3Schools: Python Function Arguments](https://www.w3schools.com/python/python_functions.asp))
+- Lambda functions ([W3Schools: Python Lambda](https://www.w3schools.com/python/python_lambda.asp))
+- Using `map()`, `filter()`, and `reduce()` for functional programming ([W3Schools: Python Map, Filter, Reduce](https://www.w3schools.com/python/ref_func_map.asp))
+- Recursive functions ([W3Schools: Python Recursion](https://www.w3schools.com/python/gloss_python_recursion.asp))
+- Function decorators (basic overview) ([W3Schools: Python Decorators](https://www.w3schools.com/python/python_decorators.asp))
 
 ---
 
-## **📅 Day 5: Dictionaries & Sets**
+## **📅 Day 5-7: Final Projects & Real-World Scenarios**
 
-### **Concepts to Learn**
-- Dictionaries: Keys & values, updating, removing items
-- Dictionary methods (`get()`, `keys()`, `values()`, `items()`)
-- Nested dictionaries
-- Sets: Creating, adding, removing items
-- Set operations (`union()`, `intersection()`, `difference()`)
-
-### **📝 4 Mini Tasks**
-1. **Dictionary Lookup:** Store and retrieve student marks.
-2. **Update Contact Book:** Add a new entry to a dictionary storing name-phone pairs.
-3. **Set Operations:** Perform `union()` and `intersection()` on two sets.
-4. **Remove Duplicates Using Set:** Convert a list to a set to remove duplicates.
-
-### **🔥 2 Major Exercises**
-1. **Inventory Management:** Store product stock and update when an item is sold.
-2. **User Authentication:** Create a dictionary-based login system.
-
-### **💻 Git Tasks**
-- Push to a new branch and merge after review.
+- **Implementing a CLI-Based Task Manager with Advanced Features.**
+- **Creating a Mini Database Using Dictionaries & JSON Storage.**
 
 ---
 
-## **📅 Day 6: Functions & Modules**
-
-### **Concepts to Learn**
-- Defining functions & return values
-- Function arguments & default values
-- Lambda functions
-- Importing & using modules (`math`, `random`, `datetime`)
-- Writing custom modules
-
-### **📝 4 Mini Tasks**
-1. **Factorial Function:** Compute the factorial of a number.
-2. **Even Number Filter:** Filter even numbers from a list.
-3. **Random Number Generator:** Generate a random number between 1 and 100.
-4. **Date Formatter:** Display today’s date in `DD-MM-YYYY` format.
-
-### **🔥 2 Major Exercises**
-1. **OTP Generator:** Generate a 6-digit random OTP.
-2. **Temperature Converter (Revisited):** Convert temperature using functions.
-
-### **💻 Git Tasks**
-- Push to a new branch and merge after review.
-
----
-
-## **📅 Day 7: Project Day**
-
-### **Mini Project**
-- **Employee Salary Calculator:** Takes employee names, base salaries, and bonus percentages and prints final salary.
-
-### **Real-World Task**
-- **Task Manager CLI:** Users can add, remove, and view tasks stored in a dictionary.
-
-### **💻 Git Tasks**
-- Push to a new branch, review, and merge.
-
----
-
-This plan ensures the intern learns key Python fundamentals with hands-on tasks, real-world exercises, and proper Git usage. 🚀
+This revised training plan incorporates **advanced comprehensions, functional programming techniques, iterative methods, and inline operations**, ensuring the intern is well-prepared for real-world scenarios. 🚀
 
