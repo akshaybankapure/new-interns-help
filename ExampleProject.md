@@ -1,4 +1,4 @@
-# **Bonus Project: Creating a Mini Database Using Dictionaries & JSON Storage**
+# **Example Project: Creating a Mini Database Using Dictionaries & JSON Storage**
 
 ## **Goal**
 To implement a fully functional **mini-database** that supports CRUD (Create, Read, Update, Delete) operations, stores data persistently using JSON, incorporates **security measures**, and is **optimized for scalability and cloud deployment**.
@@ -143,4 +143,4 @@ To make this a real-world application, integrate it with:
 
 ---
 
-This bonus project covers **database handling, security, performance optimizations, and cloud integration**, providing an **end-to-end** development experience. 🚀
+This example python project covers **database handling, security, performance optimizations, and cloud integration**, providing an **end-to-end** development experience. 🚀
