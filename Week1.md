@@ -10,7 +10,7 @@ Build a strong foundation in Python by covering syntax, data types, conditionals
 ### **Concepts to Learn**
 - Installing Python & setting up VS Code / PyCharm
 - Running Python scripts
-- Basic syntax & print statements
+- Basic syntax & print statements (link: https://www.w3schools.com/python/python_syntax.asp)
 - Variables and data types (integers, floats, strings, booleans)
 - String manipulation and formatting
 - Type conversion (`int()`, `float()`, `str()`)
