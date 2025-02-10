@@ -58,10 +58,44 @@ Build a strong foundation in Python by covering syntax, data types, conditionals
 
 ---
 
-## **📅 Day 5-7: Final Projects & Real-World Scenarios**
 
-- **Implementing a CLI-Based Task Manager with Advanced Features.**
-- **Creating a Mini Database Using Dictionaries & JSON Storage.**
+## **📅 Day 5-7: Project - Building a Modular CLI-Based Task Manager**
+
+### **Project Overview**
+Develop a **Command-Line Interface (CLI) Task Manager** that allows users to add, remove, list, and manage tasks efficiently using Python.
+
+### **Project Features**
+- Add, remove, and mark tasks as completed
+- View pending and completed tasks
+- Store data persistently using JSON
+- Handle command-line arguments for enhanced usability
+
+### **Architecture & Modular Approach**
+#### **1. File Structure**
+```
+task_manager/
+├── main.py          # Entry point
+├── task_handler.py  # Handles task operations (add, remove, list)
+├── storage.py       # Manages JSON storage
+├── utils.py         # Helper functions
+└── requirements.txt # Dependencies (if any)
+```
+
+#### **2. Key Modules**
+- **`task_handler.py`** → Handles CRUD operations for tasks
+- **`storage.py`** → Reads and writes task data to a JSON file
+- **`utils.py`** → Provides helper functions like input validation
+
+### **Advanced Enhancements**
+- Implement command-line arguments (`argparse`) to allow task management directly via the terminal.
+- Add search functionality to filter tasks.
+- Implement exception handling for robust execution.
+
+### **Final Git Task**
+- Create a feature branch `feature-task-manager`
+- Implement features in separate commits
+- Merge the branch into `main` after review
+
 
 ---
 
