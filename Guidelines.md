@@ -1,4 +1,5 @@
-# Junior Developer Guidelines
+# Developer Guidelines
+This document serves as a comprehensive reference for all level of developers to maintain standardized, up-to-date, and high-quality coding practices.
 
 ## Naming Conventions & Guidelines
 
@@ -147,4 +148,3 @@
 
 ---
 
-This document serves as a comprehensive reference for future developers to maintain standardized, up-to-date, and high-quality coding practices.
