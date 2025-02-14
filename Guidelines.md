@@ -1,153 +1,142 @@
 # Junior Developer Guidelines
 
-## Brief
-This document outlines coding, Git, and best practice guidelines for junior developers. It serves as a long-term reference for maintaining code quality, consistency, and efficiency in all projects. Follow these best practices to ensure seamless collaboration and maintainability.
+## Naming Conventions & Guidelines
 
----
+### File Naming Conventions
 
-## Learn More
-- **Python Best Practices:** [Python PEP 8 Style Guide](https://peps.python.org/pep-0008/)
-- **JavaScript Best Practices:** [JavaScript.info](https://javascript.info/)
-- **TypeScript Handbook:** [TypeScript Docs](https://www.typescriptlang.org/docs/)
-- **Git Best Practices:** [Atlassian Git Guide](https://www.atlassian.com/git/tutorials)
-- **Commit Message Guidelines:** [Conventional Commits](https://www.conventionalcommits.org/)
-- **Code Formatting:** [Prettier](https://prettier.io/) | [Black (Python)](https://black.readthedocs.io/en/stable/)
-- **Cheat Sheets:**
-  - [Python Cheatsheet](https://gto76.github.io/python-cheatsheet/)
-  - [JavaScript Cheatsheet](https://htmlcheatsheet.com/js/)
-  - [TypeScript Cheatsheet](https://typescript-cheatsheets.dev/)
-  - [Git Cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)
+#### Python
+- **Modules:** `module_name.py`
+- **Classes:** `PascalCase`
+- **Functions & Methods:** `snake_case`
+- **Constants:** `UPPER_CASE`
+- **Private Variables:** `_single_leading_underscore`
+- **Dunder Methods:** `__double_leading_underscore__`
+
+#### JavaScript / TypeScript
+- **Components:** `ComponentName.tsx`
+- **Services:** `serviceName.ts`
+- **Utilities:** `utilName.ts`
+- **Styles:** `component-name.module.css`
+- **Configurations:** `config.ts`
+- **Constants:** `constants.ts`
 
 ---
 
 ## Python Development Guidelines
-- **Follow PEP 8** for coding style.
-- **Use snake_case** for variables and functions.
-- **Use PascalCase** for class names.
-- **Type hints must be used** (`def func(x: int) -> str:`).
-- **Keep imports structured** and **avoid circular dependencies**.
-- **Ensure code readability** and maintain modular structure.
-- **Example:**
-  ```python
-  class User:
-      def __init__(self, name: str, age: int):
-          self.name = name
-          self.age = age
-      
-      def greet(self) -> str:
-          return f"Hello, my name is {self.name}"
-  ```
 
-### Python Mini Cheat Sheet
-| Concept  | Example  |
-|----------|----------|
-| List Comprehension | `[x**2 for x in range(10)]` |
-| Dictionary Comprehension | `{x: x**2 for x in range(10)}` |
-| Lambda Function | `square = lambda x: x * x` |
-| Exception Handling | `try: ... except ValueError:` |
+### General Guidelines
+- Follow **PEP 8** for styling.
+- Use **snake_case** for variables and functions.
+- Use **PascalCase** for class names.
+- Type hints **must be used** (`def func(x: int) -> str:`).
+- Keep imports **structured** and **avoid circular dependencies**.
+- Prefer list comprehensions over loops when possible.
+- Use `enumerate()` instead of manually tracking indexes.
+- Use `zip()` for parallel iterations.
+- Write docstrings using **PEP 257**.
+- Use context managers (`with open(...)`) for handling files.
+- Use `logging` module instead of `print()` for debugging.
+- Avoid using `global` variables.
+- Avoid deep nesting; refactor code into functions/classes where necessary.
+- Use virtual environments for dependency management (`venv`, `pipenv`, `poetry`).
+- Follow `__main__` convention for script execution.
+- Handle exceptions gracefully using `try-except`.
+
+### Common Mistakes & How to Avoid Them
+| Mistake | Solution |
+|---------|----------|
+| Using mutable default arguments | Use `None` and handle inside function |
+| Not closing file handles | Use `with open()` context manager |
+| Overwriting built-in functions | Avoid using names like `list`, `dict` |
+| Ignoring exceptions | Always catch exceptions and log properly |
+| Hardcoding configuration values | Use environment variables or config files |
+
+### Python Cheatsheet
+| Concept | Example |
+|---------|---------|
+| List Comprehensions | `[x**2 for x in range(10)]` |
+| Dictionary Comprehensions | `{x: x**2 for x in range(10)}` |
+| Lambda Functions | `add = lambda x, y: x + y` |
+| Enumerate | `for i, val in enumerate(my_list):` |
+| Zip | `for x, y in zip(list1, list2):` |
+| Generators | `yield` instead of `return` |
+| Context Managers | `with open('file.txt') as f:` |
+
+### Learn More
+- [PEP 8](https://peps.python.org/pep-0008/)
+- [Python Cheatsheet](https://gto76.github.io/python-cheatsheet/)
+- [Python Best Practices](https://realpython.com/tutorials/best-practices/)
+- [Common Python Mistakes](https://realpython.com/python-mistakes/)
 
 ---
 
 ## JavaScript Development Guidelines
-- **Use ES6+ syntax**.
-- **Use const and let**, avoid var.
-- **Follow camelCase** for variables and functions.
-- **Use PascalCase** for class names.
-- **Use modules** and avoid polluting the global scope.
-- **Ensure async operations** do not block the event loop.
-- **Example:**
-  ```javascript
-  class User {
-      constructor(name, age) {
-          this.name = name;
-          this.age = age;
-      }
-      greet() {
-          console.log(`Hello, my name is ${this.name}`);
-      }
-  }
-  ```
 
-### JavaScript Mini Cheat Sheet
-| Concept  | Example  |
-|----------|----------|
-| Arrow Function | `const add = (a, b) => a + b` |
-| Template Literals | ``Hello, ${name}!`` |
-| Destructuring | `const { name, age } = user` |
-| Promises | `fetch(url).then(res => res.json())` |
+### General Guidelines
+- Prefer **ES6+ syntax**.
+- Use **const** and **let**, avoid **var**.
+- Follow **camelCase** for variables and functions.
+- Use **PascalCase** for class names.
+- Use **modules** to avoid polluting the global scope.
+- Avoid using `==` (use `===` instead for strict equality).
+- Use template literals instead of concatenation (`\`${var}\``).
+- Use `async/await` instead of callbacks.
+- Prefer **forEach/map/filter** over `for` loops where possible.
+- Minimize direct DOM manipulations; use frameworks/libraries where needed.
+- Avoid using `eval()`.
+- Always handle promises correctly using `.catch()`.
+- Keep JavaScript files modular to ensure maintainability.
 
----
+### JavaScript Cheatsheet
+| Concept | Example |
+|---------|---------|
+| Arrow Functions | `const add = (x, y) => x + y;` |
+| Template Literals | `` `Hello, ${name}!` `` |
+| Spread Operator | `const newArr = [...arr, 4, 5]` |
+| Destructuring | `const {name, age} = obj;` |
+| Async/Await | `await fetch(url)` |
+| Ternary Operator | `isTrue ? 'Yes' : 'No'` |
+| Optional Chaining | `user?.profile?.email` |
 
-## Git Commit & Branch Naming
-### Feature Branch Naming
-```
-feature/<JIRA-TICKET-ID>-<short-description>
-```
-**Example:**
-```bash
-feature/TCG-123-add-user-authentication
-```
-
-### Commit Messages
-**Format:**
-```bash
-<type>: <short summary>
-
-[Optional] Longer description if needed
-
-[JIRA-TICKET-ID]
-```
-**Commit Types:**
-- **feat**: New feature
-- **fix**: Bug fix
-- **chore**: Maintenance changes (dependencies, cleanup)
-- **docs**: Documentation updates
-- **test**: Adding/updating tests
-- **refactor**: Code refactoring without behavior changes
-
-**Example:**
-```bash
-feat: add user authentication
-
-Implemented JWT-based authentication system.
-
-TCG-123
-```
+### Learn More
+- [JavaScript.info](https://javascript.info/)
+- [JavaScript Cheatsheet](https://htmlcheatsheet.com/js/)
+- [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
+- [Common JavaScript Mistakes](https://rollbar.com/blog/top-10-javascript-errors/)
 
 ---
 
-## File Naming Conventions
+## TypeScript Development Guidelines
 
-### Python
-- Modules: `module_name.py`
-- Classes: `ClassName`
-- Scripts: `script_name.py`
+### General Guidelines
+- Use **strict types**.
+- Define **interfaces and types** instead of `any`.
+- Prefer **readonly properties** when applicable.
+- Always define function return types.
+- Keep TypeScript **configurations strict** (`strict: true`).
+- Use `as const` for fixed values to maintain strict type safety.
+- Use `never` for unreachable code to ensure correctness.
+- Keep your interfaces clean and modular.
 
-### JavaScript / TypeScript
-- Components: `ComponentName.tsx`
-- Services: `serviceName.ts`
-- Utilities: `utilName.ts`
-- Styles: `component-name.module.css`
-- Configurations: `config.ts`
-- Constants: `constants.ts`
+### TypeScript Cheatsheet
+| Concept | Example |
+|---------|---------|
+| Type Alias | `type Point = { x: number; y: number };` |
+| Interface | `interface User { name: string; age: number; }` |
+| Readonly | `readonly arr: number[]` |
+| Generics | `function identity<T>(arg: T): T { return arg; }` |
+| Enum | `enum Color { Red, Green, Blue }` |
+| Optional Properties | `interface User { age?: number }` |
+| Type Assertion | `const input = myVar as string;` |
+
+### Learn More
+- [TypeScript Docs](https://www.typescriptlang.org/docs/)
+- [TypeScript Cheatsheet](https://typescript-cheatsheets.dev/)
+- [Common TypeScript Mistakes](https://khalilstemmler.com/blogs/typescript/common-mistakes/)
 
 ---
 
-## Module & Class Naming
-
-### Python
-- Modules: `snake_case`
-- Classes: `PascalCase`
-- Methods & Functions: `snake_case`
-
-### JavaScript / TypeScript
-- Module names: `camelCase`
-- Class names: `PascalCase`
-- Function names: `camelCase`
-
----
-
-## Best Practices Summary
+## Coding Standards
 - **Write reusable, modular code**.
 - **Use linters and formatters** (`ESLint`, `Prettier`, `Black`, `Flake8`).
 - **Use meaningful logs and error messages**.
@@ -158,4 +147,4 @@ TCG-123
 
 ---
 
-This document serves as a reference for all future developers to follow standardized and up-to-date coding practices.
+This document serves as a comprehensive reference for future developers to maintain standardized, up-to-date, and high-quality coding practices.
