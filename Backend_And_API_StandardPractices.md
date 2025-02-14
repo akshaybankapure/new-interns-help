@@ -5,7 +5,7 @@
 ### Why Use Environment Variables?
 - Keeps sensitive information like API keys, database credentials, and third-party tokens **out of the codebase**.
 - Prevents accidental commits of sensitive data.
-- Allows different configurations for development, testing, and production environments.
+- Allows different configurations for development, testing, and production environments. 
 
 ### How to Use `.env` Files
 #### Creating an `.env` File
