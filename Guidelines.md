@@ -1,56 +1,95 @@
 # Junior Developer Guidelines
 
-## General Development Guidelines
-- **Write Readable Code:** Follow clean code principles and write self-explanatory code.
-- **Follow DRY & SOLID Principles:** Avoid code duplication and ensure modularity.
-- **Use Proper Naming Conventions:** Variables, functions, and classes should have meaningful names.
-- **Write Unit Tests:** Ensure your code is covered with unit tests.
-- **Code Reviews:** Always submit a pull request for review before merging.
-- **Error Handling:** Implement proper error handling and logging.
-- **Security:** Follow security best practices to prevent vulnerabilities.
-- **Documentation:** Add meaningful comments and update documentation when necessary.
-- **Version Control:** Use Git properly, follow branching strategies, and write meaningful commit messages.
+## Brief
+This document outlines coding, Git, and best practice guidelines for junior developers. It serves as a long-term reference for maintaining code quality, consistency, and efficiency in all projects. Follow these best practices to ensure seamless collaboration and maintainability.
 
 ---
 
-## Typing Guidelines
+## Learn More
+- **Python Best Practices:** [Python PEP 8 Style Guide](https://peps.python.org/pep-0008/)
+- **JavaScript Best Practices:** [JavaScript.info](https://javascript.info/)
+- **TypeScript Handbook:** [TypeScript Docs](https://www.typescriptlang.org/docs/)
+- **Git Best Practices:** [Atlassian Git Guide](https://www.atlassian.com/git/tutorials)
+- **Commit Message Guidelines:** [Conventional Commits](https://www.conventionalcommits.org/)
+- **Code Formatting:** [Prettier](https://prettier.io/) | [Black (Python)](https://black.readthedocs.io/en/stable/)
+- **Cheat Sheets:**
+  - [Python Cheatsheet](https://gto76.github.io/python-cheatsheet/)
+  - [JavaScript Cheatsheet](https://htmlcheatsheet.com/js/)
+  - [TypeScript Cheatsheet](https://typescript-cheatsheets.dev/)
+  - [Git Cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)
 
-### JavaScript (JS)
-- Prefer **ES6+ syntax**.
-- Use **const** and **let**, avoid **var**.
-- Follow **camelCase** for variables and functions.
-- Use **PascalCase** for class names.
-- Use **modules** and avoid polluting the global scope.
-- Ensure code **does not block the event loop unnecessarily**.
+---
 
-### TypeScript (TS)
-- Use **strict types**.
-- Define **interfaces and types** instead of using `any`.
-- Prefer **readonly properties** where applicable.
-- Always define function return types.
-- Keep TypeScript **configurations strict** (`strict: true`).
+## Python Development Guidelines
+- **Follow PEP 8** for coding style.
+- **Use snake_case** for variables and functions.
+- **Use PascalCase** for class names.
+- **Type hints must be used** (`def func(x: int) -> str:`).
+- **Keep imports structured** and **avoid circular dependencies**.
+- **Ensure code readability** and maintain modular structure.
+- **Example:**
+  ```python
+  class User:
+      def __init__(self, name: str, age: int):
+          self.name = name
+          self.age = age
+      
+      def greet(self) -> str:
+          return f"Hello, my name is {self.name}"
+  ```
 
-### Python
-- Follow **PEP 8** for styling.
-- Use **snake_case** for variables and functions.
-- Use **PascalCase** for class names.
-- Type hints **must be used** (`def func(x: int) -> str:`).
-- Keep imports **structured** and **avoid circular dependencies**.
+### Python Mini Cheat Sheet
+| Concept  | Example  |
+|----------|----------|
+| List Comprehension | `[x**2 for x in range(10)]` |
+| Dictionary Comprehension | `{x: x**2 for x in range(10)}` |
+| Lambda Function | `square = lambda x: x * x` |
+| Exception Handling | `try: ... except ValueError:` |
+
+---
+
+## JavaScript Development Guidelines
+- **Use ES6+ syntax**.
+- **Use const and let**, avoid var.
+- **Follow camelCase** for variables and functions.
+- **Use PascalCase** for class names.
+- **Use modules** and avoid polluting the global scope.
+- **Ensure async operations** do not block the event loop.
+- **Example:**
+  ```javascript
+  class User {
+      constructor(name, age) {
+          this.name = name;
+          this.age = age;
+      }
+      greet() {
+          console.log(`Hello, my name is ${this.name}`);
+      }
+  }
+  ```
+
+### JavaScript Mini Cheat Sheet
+| Concept  | Example  |
+|----------|----------|
+| Arrow Function | `const add = (a, b) => a + b` |
+| Template Literals | ``Hello, ${name}!`` |
+| Destructuring | `const { name, age } = user` |
+| Promises | `fetch(url).then(res => res.json())` |
 
 ---
 
 ## Git Commit & Branch Naming
-
 ### Feature Branch Naming
-`feature/<JIRA-TICKET-ID>-<short-description>`
-
-Example:
+```
+feature/<JIRA-TICKET-ID>-<short-description>
+```
+**Example:**
 ```bash
 feature/TCG-123-add-user-authentication
 ```
 
 ### Commit Messages
-Format:
+**Format:**
 ```bash
 <type>: <short summary>
 
@@ -58,8 +97,7 @@ Format:
 
 [JIRA-TICKET-ID]
 ```
-
-Types:
+**Commit Types:**
 - **feat**: New feature
 - **fix**: Bug fix
 - **chore**: Maintenance changes (dependencies, cleanup)
@@ -67,7 +105,7 @@ Types:
 - **test**: Adding/updating tests
 - **refactor**: Code refactoring without behavior changes
 
-Example:
+**Example:**
 ```bash
 feat: add user authentication
 
@@ -80,6 +118,11 @@ TCG-123
 
 ## File Naming Conventions
 
+### Python
+- Modules: `module_name.py`
+- Classes: `ClassName`
+- Scripts: `script_name.py`
+
 ### JavaScript / TypeScript
 - Components: `ComponentName.tsx`
 - Services: `serviceName.ts`
@@ -88,24 +131,19 @@ TCG-123
 - Configurations: `config.ts`
 - Constants: `constants.ts`
 
-### Python
-- Modules: `module_name.py`
-- Classes: `ClassName`
-- Scripts: `script_name.py`
-
 ---
 
 ## Module & Class Naming
-
-### JavaScript / TypeScript
-- Module names: `camelCase`
-- Class names: `PascalCase`
-- Function names: `camelCase`
 
 ### Python
 - Modules: `snake_case`
 - Classes: `PascalCase`
 - Methods & Functions: `snake_case`
+
+### JavaScript / TypeScript
+- Module names: `camelCase`
+- Class names: `PascalCase`
+- Function names: `camelCase`
 
 ---
 
@@ -116,3 +154,8 @@ TCG-123
 - **Document APIs and public functions**.
 - **Use dependency management properly** (`package.json`, `requirements.txt`).
 - **Test code before pushing** (`unit tests, integration tests`).
+- **Follow Git workflow best practices** (`rebase, merge, conflict resolution`).
+
+---
+
+This document serves as a reference for all future developers to follow standardized and up-to-date coding practices.
