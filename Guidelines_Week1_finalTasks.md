@@ -12,27 +12,8 @@ Environment variables are dynamic values that the operating system or a program 
 ## Different Ways to Use Environment Variables in Python
 There are multiple ways to handle environment variables in Python. Choosing the right method depends on the use case.
 
-### 1. Using `os.environ` (Direct Environment Variables)
-Best suited for:
-- Temporary environment variables within the session.
-- Simple configurations that do not need persistence.
 
-Example:
-```python
-import os
-
-# Set an environment variable (only for the current session)
-os.environ['TASK_MANAGER_MODE'] = 'development'
-
-# Retrieve an environment variable
-mode = os.getenv('TASK_MANAGER_MODE', 'production')  # Default to 'production' if not set
-print(f"Running in {mode} mode")
-```
-**When NOT to use:**
-- When environment variables need to persist across sessions.
-- When storing secrets (prefer .env files or system environment variables).
-
-### 2. Using a `.env` File with `python-dotenv`
+### 1. Using a `.env` File with `python-dotenv` (preferred)
 Best suited for:
 - Managing multiple environment variables.
 - Keeping secrets and configuration separate from code.
@@ -63,6 +44,27 @@ print(f"Using database: {db_path}")
 ```
 **When NOT to use:**
 - If the application is running in a containerized or cloud environment where secret managers are available (AWS Secrets Manager, Kubernetes Secrets, etc.).
+
+### 2. Using `os.environ` (Direct Environment Variables)
+Best suited for:
+- Temporary environment variables within the session.
+- Simple configurations that do not need persistence.
+
+Example:
+```python
+import os
+
+# Set an environment variable (only for the current session)
+os.environ['TASK_MANAGER_MODE'] = 'development'
+
+# Retrieve an environment variable
+mode = os.getenv('TASK_MANAGER_MODE', 'production')  # Default to 'production' if not set
+print(f"Running in {mode} mode")
+```
+**When NOT to use:**
+- When environment variables need to persist across sessions.
+- When storing secrets (prefer .env files or system environment variables).
+
 
 ### 3. Using System-Level Environment Variables
 Best suited for:
