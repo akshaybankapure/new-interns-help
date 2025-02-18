@@ -169,3 +169,101 @@ Using environment variables in Python ensures that configurations remain secure,
 - System-level environment variables for production and containerized deployments.
 This approach enhances the usability and maintainability of the CLI Task Manager.
 
+
+
+
+
+
+
+
+
+### Example:
+
+```python
+import json
+import argparse
+from pathlib import Path
+
+# Define the file path for task storage
+TASK_FILE = Path("tasks.json")
+
+# Storage Management
+class Storage:
+    @staticmethod
+    def load_tasks():
+        if TASK_FILE.exists():
+            with open(TASK_FILE, "r") as file:
+                return json.load(file)
+        return {"tasks": []}
+
+    @staticmethod
+    def save_tasks(tasks):
+        with open(TASK_FILE, "w") as file:
+            json.dump(tasks, file, indent=4)
+
+# Task Handling
+class TaskManager:
+    def __init__(self):
+        self.tasks = Storage.load_tasks()
+    
+    def add_task(self, description):
+        self.tasks["tasks"].append({"description": description, "completed": False})
+        Storage.save_tasks(self.tasks)
+        print(f"Task added: {description}")
+    
+    def remove_task(self, index):
+        try:
+            task = self.tasks["tasks"].pop(index)
+            Storage.save_tasks(self.tasks)
+            print(f"Task removed: {task['description']}")
+        except IndexError:
+            print("Invalid task index.")
+    
+    def list_tasks(self, completed=None):
+        for idx, task in enumerate(self.tasks["tasks"]):
+            if completed is None or task["completed"] == completed:
+                status = "✓" if task["completed"] else "✗"
+                print(f"[{idx}] {status} {task['description']}")
+    
+    def mark_completed(self, index):
+        try:
+            self.tasks["tasks"][index]["completed"] = True
+            Storage.save_tasks(self.tasks)
+            print(f"Task marked as completed: {self.tasks['tasks'][index]['description']}")
+        except IndexError:
+            print("Invalid task index.")
+
+# Command-Line Interface Integration
+def main():
+    parser = argparse.ArgumentParser(description="CLI Task Manager")
+    parser.add_argument("--add", metavar="task", type=str, help="Add a new task")
+    parser.add_argument("--remove", metavar="index", type=int, help="Remove a task by index")
+    parser.add_argument("--list", action="store_true", help="List all tasks")
+    parser.add_argument("--completed", action="store_true", help="List only completed tasks")
+    parser.add_argument("--pending", action="store_true", help="List only pending tasks")
+    parser.add_argument("--done", metavar="index", type=int, help="Mark task as completed")
+    
+    args = parser.parse_args()
+    manager = TaskManager()
+    
+    if args.add:
+        manager.add_task(args.add)
+    elif args.remove is not None:
+        manager.remove_task(args.remove)
+    elif args.list:
+        manager.list_tasks()
+    elif args.completed:
+        manager.list_tasks(completed=True)
+    elif args.pending:
+        manager.list_tasks(completed=False)
+    elif args.done is not None:
+        manager.mark_completed(args.done)
+    else:
+        parser.print_help()
+
+if __name__ == "__main__":
+    main()
+
+```
+
+
