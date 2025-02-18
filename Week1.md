@@ -58,44 +58,61 @@ Build a strong foundation in Python by covering syntax, data types, conditionals
 
 ---
 
+## **📅 Day 5: Exploring Advanced Python Features**
 
-## **📅 Day 5-7: Project - Building a Modular CLI-Based Task Manager**
+### **Concepts to Learn**
+- **Tuple Operations**: Immutable sequences, packing/unpacking ([W3Schools: Tuples](https://www.w3schools.com/python/python_tuples.asp))
+- **String Manipulations**: String slicing, `.find()`, `.replace()`, `.split()`, `.join()` ([W3Schools: Strings](https://www.w3schools.com/python/python_strings.asp))
+- **List Comprehensions with Conditional Expressions** ([Python Docs](https://docs.python.org/3/tutorial/datastructures.html))
+- **Lambda Functions & Anonymous Functions** ([W3Schools: Lambda](https://www.w3schools.com/python/python_lambda.asp))
+- **Using Python's Built-in Functions**: `map()`, `filter()`, `zip()`, `enumerate()`
 
-### **Project Overview**
-Develop a **Command-Line Interface (CLI) Task Manager** that allows users to add, remove, list, and manage tasks efficiently using Python.
+### **🔥 Major Exercise: String & List Processing**
+- Write a function that takes a sentence and returns a dictionary with word counts.
+- Implement a function that filters a list of numbers, keeping only even numbers using `filter()`.
+- Use `map()` to square all numbers in a list.
+- Use list comprehension to create a list of squares for numbers 1-10.
 
-### **Project Features**
-- Add, remove, and mark tasks as completed
-- View pending and completed tasks
-- Store data persistently using JSON
-- Handle command-line arguments for enhanced usability
+---
 
-### **Architecture & Modular Approach**
-#### **1. File Structure**
-```
-task_manager/
-├── main.py          # Entry point
-├── task_handler.py  # Handles task operations (add, remove, list)
-├── storage.py       # Manages JSON storage
-├── utils.py         # Helper functions
-└── requirements.txt # Dependencies (if any)
-```
+## **📅 Day 6: Working with External Libraries & APIs**
 
-#### **2. Key Modules**
-- **`task_handler.py`** → Handles CRUD operations for tasks
-- **`storage.py`** → Reads and writes task data to a JSON file
-- **`utils.py`** → Provides helper functions like input validation
+### **Concepts to Learn**
+- **Using External Libraries (`pip` & `import`)** ([Python Package Index](https://pypi.org/))
+- **Basic Web Scraping with `requests`** ([W3Schools: Requests](https://www.w3schools.com/python/module_requests.asp))
+- **Interacting with Public APIs (`requests.get()`)** ([Public APIs](https://public-apis.io/))
+- **Handling API Responses (JSON Parsing)**
+- **Fetching and Processing Data from APIs**
 
-### **Advanced Enhancements**
-- Implement command-line arguments (`argparse`) to allow task management directly via the terminal.
-- Add search functionality to filter tasks.
-- Implement exception handling for robust execution.
+### **🔥 Major Exercise: API Data Processing**
+- Use the `requests` library to fetch weather data from an open API and print relevant information.
+- Parse JSON data from an API response and extract key details.
+- Implement a function that sends a GET request and handles errors properly.
 
-### **Final Git Task**
-- Create a feature branch `feature-task-manager`
-- Implement features in separate commits
-- Merge the branch into `main` after review
+---
 
+## **📅 Day 7: Final Concepts - Iterators, Generators & Recursion**
+
+### **Concepts to Learn**
+- **Iterators & Iterable Objects (`iter()`, `next()`)** ([Python Docs](https://docs.python.org/3/tutorial/classes.html#iterators))
+- **Creating and Using Generators (`yield`)** ([W3Schools: Generators](https://www.w3schools.com/python/ref_keyword_yield.asp))
+- **Recursion & Base Cases** ([W3Schools: Recursion](https://www.w3schools.com/python/gloss_python_recursion.asp))
+- **Working with Infinite Sequences Using Generators**
+
+### **🔥 Major Exercise: Generator Functions & Recursion**
+- Write a generator function that yields even numbers indefinitely.
+- Implement a recursive function for computing factorial of a number.
+- Create a Fibonacci sequence generator using recursion.
+- Demonstrate the use of iterators and `next()` with a custom iterable.
+
+---
+
+## **Outcome & Transition to Week 2**
+By completing this week, the intern will have:
+- **Mastered Python's advanced built-in features**
+- **Interacted with real-world APIs and handled data**
+- **Explored generators, iterators, and recursion**
+- **Strengthened problem-solving skills for Python programming**
 
 ---
 
