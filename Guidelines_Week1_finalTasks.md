@@ -162,7 +162,8 @@ logging.info("Task Manager Started")
 ```
 
 ---
-### Conclusion
+
+
 Using environment variables in Python ensures that configurations remain secure, flexible, and easy to change without modifying code. Different methods should be used based on the environment and requirements:
 - `os.environ` for temporary or simple setups.
 - `.env` files with `python-dotenv` for local development.
