@@ -1,7 +1,3 @@
-Let's start expanding **Day 1** for **absolute beginners**, making sure everything is crystal clear, with extra **hints, explanations, and examples**.
-
----
-
 ### **📅 Day 1: JavaScript Syntax, Variables & Operators (For Absolute Beginners)**  
 
 ### **Session 1: Introduction to JavaScript & Variables**  
@@ -161,16 +157,3 @@ console.log(status); // "Adult"
 - Use the **ternary operator** to check if a number is **even or odd**.  
 
 ---
-
-### **Recap of Day 1**  
-✅ Learned **how to write JavaScript in HTML**  
-✅ Understood **variables (`var`, `let`, `const`)**  
-✅ Explored **data types and how to use `typeof`**  
-✅ Practiced **arithmetic, comparison, and logical operators**  
-✅ Used **ternary operator for quick conditions**  
-
----
-
-This **Day 1 guide** ensures a **complete beginner** understands everything from **basic syntax to operators**. 🚀  
-
-Would you like **even more examples, deeper explanations, or a small quiz at the end**? Let me know! 🎯
