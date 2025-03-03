@@ -1,4 +1,4 @@
-# This Document explains the basics to understnd the Marriage of HTML, CSS, and JavaScript:
+## This Document explains the basics to understnd, #The Marriage of HTML, CSS, and JavaScript:
 
 ## Introduction
 Understanding how HTML, CSS, and JavaScript work together, you can build modern, interactive websites. Start by mastering each technology individually and then combine them to create dynamic web applications. Keep practicing, experimenting, and referring to documentation whenever you need help!
