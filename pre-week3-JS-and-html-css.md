@@ -89,7 +89,7 @@ JavaScript makes web pages interactive and dynamic. It allows you to manipulate 
 ### What is the DOM?
 The **Document Object Model (DOM)** is the structured representation of an HTML document. It allows JavaScript to interact with the elements on the page dynamically. Every HTML tag becomes an object in the DOM tree, which can be manipulated using JavaScript.
 
-### Basics of the DOM
+### [Basics of the DOM](https://github.com/akshaybankapure/new-interns-help/blob/main/basics-of-DOM.md)
 The DOM represents the page as a tree structure, where:
 - The `<html>` element is the root.
 - The `<head>` and `<body>` are child nodes.
