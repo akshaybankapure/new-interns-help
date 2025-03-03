@@ -148,8 +148,123 @@ To build a **solid foundation** in JavaScript by covering both **basic and advan
 
 ---
 
+## **📅 Day 5: Asynchronous JavaScript & Fetch API**
 
-## **📅 Day 5: DOM Manipulation & Forms Handling**
+### **Concepts to Learn**
+- [Understanding Asynchronous JavaScript](https://www.w3schools.com/js/js_asynchronous.asp) (`setTimeout`, `setInterval`)
+- [JavaScript Callbacks & Promises](https://www.w3schools.com/js/js_promise.asp) (`.then`, `.catch`)
+- [async and await](https://www.w3schools.com/js/js_async.asp)
+- [Fetch API](https://www.w3schools.com/js/js_api_fetch.asp) (`fetch`, `JSON.parse()`)
+- [Handling API Errors](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) (`try...catch` with `fetch`)
+
+💡 **Hint:** A Promise is a placeholder for an eventual result. Use `.then()` to handle success and `.catch()` for errors.
+
+### **Practice Exercises (Work Tasks)**
+- Use `setTimeout()` to log a message after 3 seconds.
+- Create a function that returns a Promise which resolves after 2 seconds.
+- Implement an API call using `fetch()` to retrieve data from a public API.
+
+### **Fun Task** 🎉
+- Build a simple joke generator that fetches random jokes from an API.
+- Create a mini weather app that fetches weather data based on user input.
+
+### **More Practice**
+- Write a function that fetches data from an API and logs only specific properties.
+- Implement a retry mechanism for API requests that fail.
+
+### **More Fun Tasks** 🎉
+- Build a currency converter that fetches exchange rates from an API.
+- Create a GitHub user search tool that fetches profile details from the GitHub API.
+
+### **Home Exercises**
+1. Fetch and display user data from the [JSONPlaceholder API](https://jsonplaceholder.typicode.com/).
+2. Implement a function that makes multiple API calls sequentially.
+3. Create a function that fetches an API response, modifies the data, and displays it on the webpage.
+4. Implement error handling when making an API call using `try...catch`.
+5. Write a function that fetches data every 10 seconds and updates the webpage.
+
+---
+
+## **📅 Day 6: Error Handling, Debugging & Local Storage**
+
+### **Concepts to Learn**
+- [Using `try...catch...finally`](https://www.w3schools.com/js/js_errors.asp)
+- [Throwing custom errors (`throw` statement)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw)
+- [Debugging with `console.log()`, `console.error()`, and browser dev tools](https://www.w3schools.com/js/js_debugging.asp)
+- [Using Local Storage](https://www.w3schools.com/jsref/prop_win_localstorage.asp) (`localStorage.setItem`, `getItem`, `removeItem`)
+- [Session Storage & Cookies](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage)
+
+💡 **Hint:** Use `debugger;` in your code to create breakpoints when debugging.
+
+### **Practice Exercises (Work Tasks)**
+- Implement error handling in a function that calculates the square root of a number.
+- Store and retrieve user settings using `localStorage`.
+- Debug an existing script with intentional errors and fix them.
+
+### **Fun Task** 🎉
+- Build a persistent to-do list that saves tasks even after refreshing the page.
+- Implement a theme switcher that remembers the user's preference using local storage.
+
+### **More Practice**
+- Create a login system that stores and retrieves user data from local storage.
+- Implement a settings page where users can adjust preferences and store them in local storage.
+
+### **More Fun Tasks** 🎉
+- Build a small notes app that allows users to write, save, and delete notes using local storage.
+- Create a countdown timer that persists time across page reloads using session storage.
+
+### **Home Exercises**
+1. Implement error handling for a function that fetches data from an API.
+2. Create a local storage-based shopping cart that saves selected items.
+3. Implement a simple bookmarking system that saves favorite links.
+4. Debug a given JavaScript script and document all fixes made.
+5. Build a simple app that remembers the last entered text input field data even after the page refreshes.
+
+---
+
+## **📅 Day 7: JavaScript Best Practices & Project Wrap-up**
+
+### **Concepts to Learn**
+- [Code Formatting & Linting](https://prettier.io/) (`Prettier`, `ESLint`)
+- [Writing Clean & Readable Code](https://google.github.io/styleguide/jsguide.html)
+- [Avoiding Common JavaScript Mistakes](https://www.w3schools.com/js/js_mistakes.asp)
+- [Performance Optimization Techniques](https://developer.mozilla.org/en-US/docs/Web/Performance)
+- [Event Delegation & Best Practices](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events)
+
+💡 **Hint:** Use **`const`** by default and only use **`let`** if the value needs to change.
+
+### **Practice Exercises (Work Tasks)**
+- Review and optimize a messy JavaScript file by applying best practices.
+- Refactor an existing script to improve readability and maintainability.
+- Implement event delegation for dynamically added elements.
+
+### **Fun Task** 🎉
+- Build a small interactive quiz that asks JavaScript-related questions and provides feedback.
+- Create a simple memory game that uses JavaScript to track clicked items.
+
+### **More Practice**
+- Implement a feature that improves performance in an existing script.
+- Debug and analyze slow-performing JavaScript code.
+
+### **More Fun Tasks** 🎉
+- Develop a lightweight stopwatch using JavaScript and the `setInterval()` function.
+- Make a **mini JavaScript project** using everything learned so far. Example ideas:
+  - A task manager
+  - A notes app
+  - A budget calculator
+  - A personal expense tracker
+  - A habit tracker
+
+### **Home Exercises**
+1. Optimize a given JavaScript function to run more efficiently.
+2. Write a script that logs JavaScript errors and saves them for debugging.
+3. Implement event delegation in a list where new items can be dynamically added.
+4. Build a lightweight search filter that filters data as the user types.
+5. Create a JavaScript style guide document listing best practices.
+
+---
+
+## **📅 WeekEnds Optional1: DOM Manipulation & Forms Handling**
 
 ### **Concepts to Learn**
 - Selecting Elements (`getElementById`, `querySelector`)
@@ -171,54 +286,5 @@ To build a **solid foundation** in JavaScript by covering both **basic and advan
 - Create an interactive form that updates live as the user types.
 - Implement a button that changes the page background color when clicked.
 - Make a list where clicking an item removes it from the page.
-
----
-
-## **📅 Day 6: Error Handling & Debugging**
-
-### **Concepts to Learn**
-- Using `try...catch...finally`
-- Throwing custom errors (`throw` statement)
-- Handling asynchronous errors (`try-catch` in async functions)
-- Debugging with `console.log()`, `console.error()`, and browser dev tools
-
-💡 **Hint:** Use `debugger;` in your code to create breakpoints when debugging.
-
-### **Concepts to Learn**
-- The Call Stack and Event Loop ([MDN: Call Stack](https://developer.mozilla.org/en-US/docs/Glossary/Call_stack))
-- Understanding Asynchronous JavaScript (`setTimeout`, `setInterval`)
-- How `Promises` work (basic introduction)
-
-💡 **Hint:** A Promise is a placeholder for an eventual result. Use `.then()` to handle success and `.catch()` for errors.
-
-### **Home Exercise**
-- Simulate a delayed API response using `setTimeout()`.
-- Write a function that retries a failed operation up to three times before throwing an error.
-- Log all errors in a structured way using `console.error()`.
-
----
-
-## **📅 Day 7: JavaScript Best Practices & Project Wrap-up**
-
-### **Concepts to Learn**
-- Code Formatting & Linting (`Prettier`, `ESLint`)
-- Writing Clean & Readable Code
-- Avoiding Common JavaScript Mistakes
-- Performance Optimization Techniques
-
-💡 **Hint:** Use **`const`** by default and only use **`let`** if the value needs to change.
-
-### **Concepts to Learn**
-- Organizing JavaScript Code (Single Responsibility Principle)
-- Importance of Comments & Documentation
-- JavaScript Performance Optimization
-- Introduction to JavaScript Modules (`import` / `export`)
-
-💡 **Hint:** Split code into small reusable functions instead of one large function.
-
-### **Home Exercise**
-- Review and optimize a messy JavaScript file by applying best practices.
-- Convert an existing script into a modular format using `import/export`.
-- Prepare a mini-presentation on key JavaScript best practices.
 
 ---
