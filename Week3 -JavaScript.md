@@ -34,14 +34,15 @@ To build a **solid foundation** in JavaScript by covering both **basic and advan
 ## **📅 Day 2: Control Flow, Loops & Functions**
 
 ### **Concepts to Learn**
-- Conditional Statements (`if`, `else if`, `else`, `switch`)
-- Looping Structures (`for`, `while`, `do...while`)
-- Breaking out of loops (`break`, `continue`)
-- Function Declarations vs Function Expressions
-- Arrow Functions (`=>` syntax) and `this` behavior
-- Default Parameters in Functions
-- Higher-Order Functions (`map`, `filter`, `reduce`)
-- Callback Functions
+- [Conditional Statements (`if`, `else if`, `else`, `switch`)](https://www.w3schools.com/js/js_if_else.asp)
+- [Looping Structures (`for`, `while`, `do...while`)](https://www.w3schools.com/js/js_loop_for.asp)
+- [Breaking out of loops (`break`, `continue`)](https://www.w3schools.com/js/js_loop_for.asp#loopbreak)
+- [Function Declarations vs Function Expressions](https://www.w3schools.com/js/js_function_definition.asp)
+- [Arrow Functions (`=>` syntax) and `this` behavior](https://www.w3schools.com/js/js_arrow_function.asp)
+- [Default Parameters in Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters)
+- [Higher-Order Functions (`map`, `filter`, `reduce`)](https://www.w3schools.com/js/js_array_iteration.asp)
+- [Callback Functions](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function)
+
 
 💡 **Hint:** Prefer arrow functions for short, simple functions, but use regular functions if `this` is needed.
 
@@ -74,12 +75,12 @@ To build a **solid foundation** in JavaScript by covering both **basic and advan
 ## **📅 Day 3: Arrays & Objects**
 
 ### **Concepts to Learn**
-- Creating and Modifying Arrays (`push`, `pop`, `shift`, `unshift`)
-- Iterating Over Arrays (`map`, `filter`, `reduce`, `forEach`)
-- Sorting and Searching in Arrays (`sort`, `find`, `indexOf`, `includes`)
-- Object Literals & Accessing Properties
-- Adding & Removing Properties in Objects
-- Object Destructuring & Spread Operator (`...`)
+- [Creating and Modifying Arrays (`push`, `pop`, `shift`, `unshift`)](https://www.w3schools.com/js/js_array_methods.asp)
+- [Iterating Over Arrays (`map`, `filter`, `reduce`, `forEach`)](https://www.w3schools.com/js/js_array_iteration.asp)
+- [Sorting and Searching in Arrays (`sort`, `find`, `indexOf`, `includes`)](https://www.w3schools.com/js/js_array_sort.asp)
+- [Object Literals & Accessing Properties](https://www.w3schools.com/js/js_objects.asp)
+- [Adding & Removing Properties in Objects](https://www.w3schools.com/js/js_objects.asp)
+- [Object Destructuring & Spread Operator (`...`)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 
 💡 **Hint:** Use `map` when you need a new array, `forEach` when you just need to iterate.
 
@@ -112,13 +113,14 @@ To build a **solid foundation** in JavaScript by covering both **basic and advan
 ## **📅 Day 4: DOM Manipulation & Event Handling**
 
 ### **Concepts to Learn**
-- Selecting Elements (`getElementById`, `querySelector`, `querySelectorAll`)
-- Modifying Elements (`innerText`, `innerHTML`, `style`)
-- Handling Forms (`value`, `submit` event, `preventDefault()`)
-- Creating and Removing Elements (`createElement`, `appendChild`, `removeChild`)
-- Handling Input Events (`keyup`, `change`, `focus`, `blur`)
-- Event Propagation (`bubbling` & `capturing`)
-- Event Delegation
+- [Selecting Elements (`getElementById`, `querySelector`, `querySelectorAll`)](https://www.w3schools.com/js/js_htmldom_elements.asp)
+- [Modifying Elements (`innerText`, `innerHTML`, `style`)](https://www.w3schools.com/js/js_htmldom_html.asp)
+- [Handling Forms (`value`, `submit` event, `preventDefault()`)](https://www.w3schools.com/js/js_validation.asp)
+- [Creating and Removing Elements (`createElement`, `appendChild`, `removeChild`)](https://www.w3schools.com/js/js_htmldom_nodes.asp)
+- [Handling Input Events (`keyup`, `change`, `focus`, `blur`)](https://www.w3schools.com/jsref/event_onkeyup.asp)
+- [Event Propagation (`bubbling` & `capturing`)](https://www.w3schools.com/jsref/event_bubbles.asp)
+- [Event Delegation](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events)
+
 
 💡 **Hint:** Use `event.target` to see which element triggered the event.
 
