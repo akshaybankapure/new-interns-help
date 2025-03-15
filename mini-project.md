@@ -50,28 +50,36 @@ js-mini-project/
    git clone https://github.com/akshay-bankapure-tcgls/js-mini-project
    cd js-mini-project
    ```
-2. **Initialize Vite and install dependencies:**
+
+   OPTION2:
+      a. Open a new folder in VS CODE.
+      b. Then, select clone Git Repository
+      <img width="448" alt="Screenshot 2025-03-15 at 12 33 17 PM" src="https://github.com/user-attachments/assets/6827adc9-55ae-4c63-ac59-6f5e15edadad" />
+      c. Then, copy this url and paste there `https://github.com/akshay-bankapure-tcgls/js-mini-project`
+      d. Now, select option open folder 
+
+3. **Initialize Vite and install dependencies:**
    ```sh
    npm create vite@latest . --template vanilla
    npm install
    ```
-3. **Add a `.gitignore` file to exclude unnecessary files:**
+4. **Add a `.gitignore` file to exclude unnecessary files:**
    ```sh
    echo "node_modules/" >> .gitignore
    echo "dist/" >> .gitignore
    echo ".DS_Store" >> .gitignore
    ```
-4. **Commit the initial setup and push it to GitHub:**
+5. **Commit the initial setup and push it to GitHub:**
    ```sh
    git add .
    git commit -m "Initial Vite setup with .gitignore"
    git push origin main
    ```
-5. **Run the development server:**
+6. **Run the development server:**
    ```sh
    npm run dev
    ```
-6. Open the browser at `http://localhost:5173/` to see the project running.
+7. Open the browser at `http://localhost:5173/` to see the project running.
 
 ---
 
