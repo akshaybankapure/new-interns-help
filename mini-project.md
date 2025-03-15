@@ -52,6 +52,8 @@ task-manager/
    ```
 3. Open the browser at `http://localhost:5173/` to see your project running.
 
+4. Then push the code to `main` branch itself.
+
 ---
 
 ## **🟢 Step 1: Creating the `Task` Class (Encapsulation & Constructors)**
