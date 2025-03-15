@@ -46,13 +46,15 @@ js-mini-project/
 
 ### **Steps to Initialize the Project**
 1. **Clone the repository:**
-   OPTION1:
+
+   OPTION 1:
          ```sh
          git clone https://github.com/akshay-bankapure-tcgls/js-mini-project
          cd js-mini-project
          ```
+   
 
-   OPTION2:
+   OPTION 2:
       a. Open a new folder in VS CODE.
       b. Then, select clone Git Repository
          <img width="448" alt="Screenshot 2025-03-15 at 12 33 17 PM" src="https://github.com/user-attachments/assets/6827adc9-55ae-4c63-ac59-6f5e15edadad" />
