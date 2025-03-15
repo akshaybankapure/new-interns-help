@@ -58,7 +58,8 @@ js-mini-project/
    
       a. Open a new folder in VS CODE.
       b. Then, select clone Git Repository
-         <img width="448" alt="Screenshot 2025-03-15 at 12 33 17 PM" src="https://github.com/user-attachments/assets/6827adc9-55ae-4c63-ac59-6f5e15edadad" />
+   
+   <img width="448" alt="Screenshot 2025-03-15 at 12 33 17 PM" src="https://github.com/user-attachments/assets/6827adc9-55ae-4c63-ac59-6f5e15edadad" />
 
       c. Then, copy this url and paste there `https://github.com/akshay-bankapure-tcgls/js-mini-project`
 
