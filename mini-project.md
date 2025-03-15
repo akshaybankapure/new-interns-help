@@ -2,7 +2,6 @@
 
 ## **Overview**
 This guided project introduces **engineering standard practices** by following a modular and scalable approach. The intern will build a **task management system** using **Vite, JavaScript, and Object-Oriented Programming (OOP) principles** such as **inheritance, constructors, method overloading, encapsulation, and modular design**.
-This also ensures that the person learns **industry-standard software development practices** while actively contributing new features **in a structured workflow**. 🚀
 
 By completing this project, the intern will:
 - Learn **how to structure a project properly**.
@@ -19,7 +18,7 @@ The Task Management System will allow users to **create, update, delete, and fil
 
 ### **📂 Folder Structure (Following Engineering Standards)**
 ```
-task-manager/
+js-mini-project/
 ├── src/
 │   ├── components/
 │   │   ├── Task.js  # Task class (OOP principles: encapsulation, constructors, inheritance)
@@ -35,24 +34,44 @@ task-manager/
 ├── vite.config.js  # Configuration for Vite
 ├── package.json  # Project dependencies
 ├── README.md  # Project documentation
+├── .gitignore  # Ignore node_modules and other unnecessary files
 ```
 
 ---
 
-## **🔹 Setting Up Vite for the Project**
-1. Install Vite and create a new project:
+## **🔹 Initial Project Setup**
+### **Repository Setup**
+- The repository **`js-mini-project`** has already been created.
+- The intern needs to **initialize Vite** inside this repository and set up `.gitignore`.
+
+### **Steps to Initialize the Project**
+1. **Clone the repository:**
    ```sh
-   npm create vite@latest task-manager --template vanilla
-   cd task-manager
+   git clone https://github.com/akshay-bankapure-tcgls/js-mini-project
+   cd js-mini-project
+   ```
+2. **Initialize Vite and install dependencies:**
+   ```sh
+   npm create vite@latest . --template vanilla
    npm install
    ```
-2. Run the development server:
+3. **Add a `.gitignore` file to exclude unnecessary files:**
+   ```sh
+   echo "node_modules/" >> .gitignore
+   echo "dist/" >> .gitignore
+   echo ".DS_Store" >> .gitignore
+   ```
+4. **Commit the initial setup and push it to GitHub:**
+   ```sh
+   git add .
+   git commit -m "Initial Vite setup with .gitignore"
+   git push origin main
+   ```
+5. **Run the development server:**
    ```sh
    npm run dev
    ```
-3. Open the browser at `http://localhost:5173/` to see your project running.
-
-4. Then push the code to `main` branch itself.
+6. Open the browser at `http://localhost:5173/` to see the project running.
 
 ---
 
@@ -146,17 +165,5 @@ After setting up the project, the intern should contribute by implementing the f
 ### **🔟 Feature: Unit Testing**
 - Write unit tests for `Task.js` and `TaskList.js` using Jest.
 - Ensure all methods work as expected.
-
----
-
-## **✅ Summary of Engineering Best Practices Followed**
-✔ **Modularization:** Code is split into **separate files**.
-✔ **OOP Principles:** Classes, Inheritance, Encapsulation, and Overriding.
-✔ **Data Persistence:** Uses `localStorage` or REST API.
-✔ **Event Handling:** Handles user interactions via UI.js.
-✔ **Scalability:** Easily extendable (e.g., authentication, API integration).
-✔ **Code Reusability:** Methods follow the **Single Responsibility Principle (SRP)**.
-✔ **Testing:** Encourages TDD with Jest for maintainability.
-✔ **Git Workflow:** Uses feature branching, PR approvals, and merging best practices.
 
 ---
